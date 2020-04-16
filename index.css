@@ -1,129 +1,89 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: rgba(0,0,0,.8);
-    color: white;
-    font-family: 'Nunito';
+    background: #309D67;
+    padding: .4em;
+    font-family: 'Nunito', sans-serif;
 }
 
-.container {
-    margin-top: 3em;
-    border-left: .7em  solid gray;
-    padding: 0 3em;
+.card {
+    background: white;
+    border-radius: 1em;
+    padding: 2.3em;
+    text-align: center;
 }
+
+svg {
+    width: 5em;
+}
+
 h1 {
-    margin: 0;
-}
-p {
-    color: #9D9D9D;
-    margin: .5em 0 2em;
+    font-size: 1em;
+    font-weight: normal;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: .7em;
+.card p {
+    font-size: .85em;
+    color: #474747;
 }
-input[type=text], textarea {
-    margin-bottom: 1.5em;
-    display: block;
-    padding: .5em;
-    width: 80%;
-    background: gray;
-    border: none;
-    border-bottom: 1px solid lightgray;
-    outline: 0;
+
+a {
+
+    display: inline-block;
     color: black;
-}
-input[type=text]:focus, textarea:focus {
-    border-bottom: 1px solid white;
-}
-
-input[type=submit] {
-    background: gray;
-    border: none;
-    color: white;
+    text-decoration: none;
     font-weight: bold;
-    padding: .8em 2em;
-    border-radius: 2em;
+    border-radius: 5em;
     font-size: .8em;
 }
 
-.colors {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: .5em;
-}
-.colors div {
-    width: 2em;
-    height: 2em;
-    background: gray;
-    border-radius: 50%;
-    margin-bottom: .4em;
-    margin-right: .3em;
-    float: left;
+.obligation {
     text-align: center;
-    display: grid;
-    place-content: center;
-    border: 2px solid rgba(0,0,0,.3);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
 }
-.colors div:nth-child(1) {
-    background-color: #1C2022;
-}
-.colors div:nth-child(2) {
-    background-color: #9D9D9D;
-}
-.colors div:nth-child(3) {
-    background-color: #2B3337;
-}
-.colors div:nth-child(4) {
-    background-color: #FF01FF;
-}
-.colors div:nth-child(5) {
-    background-color: white;
-    color: black;
-}
-
 
 /*
-    Your fixes below!
-    
-    Use these colors codes: 
-    (1) #1C2022
-    (2) #9D9D9D
-    (3) #2B3337
-    (4) #FF01FF
-    (5) white
+
+    Your fixes below:
+
+    Use the following properties and rulesets
+    to improve the visual hierarchy of this
+    design
+
 */
 
 body {
-    background: #1C2022;
+    padding: 1.5em;
 }
 
-.container {
-    border-left: 0.7em solid #FF01FF;
+svg {
+    width: 3em;
 }
 
-p {
-    color: #9D9D9D;
+h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-input[type=text], textarea {
-    background: #2B3337;
+.card p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+    background: #309D67;
+    padding: 0.5em 1.5em;
     color: white;
-    border-bottom: 0.2em solid #9D9D9D;
-}
-
-input[type=text]:focus, textarea:focus {
-    border-bottom: 0.2em solid #FF01FF;
-}
-
-input[type=submit] {
-    background: #FF01FF;
+    margin-top: 2em;
 }
 
